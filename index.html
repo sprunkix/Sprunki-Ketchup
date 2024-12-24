@@ -50,11 +50,25 @@
                 Experience the evolution of musical horror with enhanced graphics and deeper gameplay features
             </p>
             <!-- Game Iframe -->
-            <div class="w-full aspect-video bg-black rounded-lg overflow-hidden mb-12">
+             <!-- Game Iframe Section with Overlay -->
+            <div class="relative w-full aspect-video bg-black rounded-lg overflow-hidden mb-12">
+                <!-- Game Overlay -->
+                <div id="gameOverlay" class="absolute inset-0 bg-black/75 flex flex-col items-center justify-center transition-opacity duration-300">
+                    <img src="/images/sprunki-ketchup-2.jpg" alt="Sprunki Ketchup 2.0" class="w-64 h-64 object-cover rounded-lg mb-6">
+                    <button 
+                        id="playButton"
+                        class="bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-8 rounded-lg transition-colors duration-300 flex items-center space-x-2"
+                    >
+                        <i data-lucide="play" class="w-6 h-6"></i>
+                        <span>Play Now</span>
+                    </button>
+                </div>
+                <!-- Game Iframe (hidden initially) -->
                 <iframe 
+                    id="gameIframe"
                     src="https://game.sprunkix.com/game/sprunki-katchup-2/index.html" 
                     title="Sprunki Ketchup 2.0" 
-                    class="w-full h-full border-0" 
+                    class="w-full h-full border-0 opacity-0 transition-opacity duration-300" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                     allowfullscreen>
                 </iframe>

@@ -49,7 +49,19 @@
             <p class="text-xl text-gray-400 text-center max-w-2xl mx-auto mb-8">
                 The original musical horror experience that started it all. Create unique soundscapes while avoiding infected Sprunkies.
             </p>
-            <div class="w-full aspect-video bg-black rounded-lg overflow-hidden">
+            <div class="relative w-full aspect-video bg-black rounded-lg overflow-hidden mb-12">
+                <!-- Game Overlay -->
+                <div id="gameOverlay" class="absolute inset-0 bg-black/75 flex flex-col items-center justify-center transition-opacity duration-300">
+                    <img src="/images/sprunki-ketchup.avif" alt="Sprunki Ketchup" class="w-64 h-64 object-cover rounded-lg mb-6">
+                    <button 
+                        id="playButton"
+                        class="bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-8 rounded-lg transition-colors duration-300 flex items-center space-x-2"
+                    >
+                        <i data-lucide="play" class="w-6 h-6"></i>
+                        <span>Play Now</span>
+                    </button>
+                </div>
+                <!-- Game Iframe (hidden initially) -->
                 <iframe 
                     src="https://game.sprunkix.com/game/sprunki-katchup/index.html" 
                     title="Sprunki Ketchup" 

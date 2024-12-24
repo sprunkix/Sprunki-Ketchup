@@ -17,7 +17,7 @@ Welcome to the official repository for [sprunkiketchup.pro](https://sprunkiketch
 
 ## About
 
-[Sprunki Ketchup](https://sprunkiketchup.com/) is an innovative spin-off of the popular Incredibox music creation platform. This website serves as the main landing page and information hub for Sprunki Ketchup, showcasing its unique features, gameplay, and community.
+[Sprunki Ketchup](https://sprunkiketchup.pro/) is an innovative spin-off of the popular Incredibox music creation platform. This website serves as the main landing page and information hub for Sprunki Ketchup, showcasing its unique features, gameplay, and community.
 
 ## Features
 
